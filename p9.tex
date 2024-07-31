@@ -1,0 +1,25 @@
+% Two paragraphs with 10 citations
+
+\documentclass{article}
+
+\usepackage[backend=biber,style=numeric,citestyle=numeric]{biblatex}
+
+% Add the bibliography file
+\addbibresource{reference.bib}
+
+\title{Reference and Citation}
+\author{JSSATEB-CSE}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	
+	\section{Introduction}
+	In recent years, there has been significant progress in the field of machine learning and artificial intelligence. Various techniques and methodologies have been developed to improve the accuracy and efficiency of algorithms. For instance, the use of deep learning has revolutionized image recognition and natural language processing \cite{lecun2015deep, goodfellow2016deep}. Moreover, reinforcement learning has shown promising results in game playing and robotic control \cite{sutton2018reinforcement, mnih2015human}. Additionally, advancements in hardware, such as GPUs, have accelerated the training of complex models \cite{krizhevsky2012imagenet}. Researchers are also exploring the integration of quantum computing with machine learning to solve problems that are currently infeasible with classical computers \cite{biamonte2017quantum}. These developments highlight the dynamic nature of the field and the continuous push towards more sophisticated and powerful AI systems \cite{russell2016artificial}.
+	
+	The ethical implications of AI and machine learning are another critical area of study. As these technologies become more pervasive, questions about privacy, bias, and accountability are gaining attention. Scholars have argued for the necessity of developing frameworks that ensure the responsible use of AI \cite{mittelstadt2016ethics, jobin2019global}. Issues such as algorithmic bias can lead to unfair treatment of individuals and groups, necessitating rigorous testing and validation of AI systems \cite{barocas2016big}. Additionally, the deployment of AI in sensitive areas like healthcare and criminal justice requires transparent decision-making processes to maintain public trust \cite{toreini2020relationship}. As AI continues to evolve, it is imperative that researchers, policymakers, and practitioners work together to address these ethical challenges \cite{floridi2018ai}.
+	
+	%\section{References}
+	\printbibliography
+	
+\end{document}

@@ -1,0 +1,57 @@
+% Numbered Theorems, Definitions, Corollaries
+
+\documentclass{article}
+
+\usepackage{amsthm}
+\usepackage{amssymb} % Added for \mathbb{R}
+
+% Define theorem styles
+\theoremstyle{plain} % default style for theorems, lemmas, corollaries
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition} % style for definitions
+\newtheorem{definition}[theorem]{Definition}
+
+\begin{document}
+	
+	\section{Introduction}
+	This document demonstrates the presentation of numbered theorems, definitions, corollaries, and lemmas.
+	
+	\begin{theorem}
+		Every continuous function defined on a closed interval is bounded and attains its bounds.
+	\end{theorem}
+	
+	\begin{definition}
+		A function \( f: [a, b] \to \mathbb{R} \) is called continuous if for every \( x \in [a, b] \) and for every \( \epsilon > 0 \), there exists \( \delta > 0 \) such that whenever \( |x - y| < \delta \), we have \( |f(x) - f(y)| < \epsilon \).
+	\end{definition}
+	
+	\begin{lemma}
+		If \( f \) is continuous on a closed interval \( [a, b] \), then \( f \) is uniformly continuous on \( [a, b] \).
+	\end{lemma}
+	
+	\begin{corollary}
+		If \( f \) is a continuous function defined on a closed interval \( [a, b] \), then \( f \) is bounded on \( [a, b] \).
+	\end{corollary}
+	
+	
+	\section{Examples}
+		Here we present some examples to illustrate the theorems and definitions given above.
+	
+	\begin{theorem}
+		The function \( f(x) = x^2 \) is continuous on the interval \([0, 1]\) and attains its maximum and minimum values.
+	\end{theorem}
+	
+	\begin{definition}
+		A sequence \( (a_n) \) is called convergent if there exists a number \( L \) such that for every \( \epsilon > 0 \), there exists a positive integer \( N \) such that for all \( n \geq N \), we have \( |a_n - L| < \epsilon \).
+	\end{definition}
+	
+	\begin{lemma}
+		Every convergent sequence is bounded.
+	\end{lemma}
+	
+	\begin{corollary}
+		If a sequence \( (a_n) \) is convergent, then it is also Cauchy.
+	\end{corollary}
+	
+\end{document}

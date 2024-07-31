@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm2e}
+
+\begin{document}
+	
+	\section{Question}
+	{\Large Develop a LaTeX script to present an algorithm in the document using algorithm/algorithmic/algorithm2e library}
+	
+	\section*{Training a Machine Learning Model}
+	
+	\begin{algorithm}[H]
+		\caption{Training a Machine Learning Model}
+		\KwData{Training data $D = \{(x_i, y_i)\}_{i=1}^n$, Learning rate $\eta$, Number of epochs $E$}
+		\KwResult{Trained model $M$}
+		
+		Initialize model parameters $\theta$ randomly\;
+		\For{$epoch \leftarrow 1$ \KwTo $E$}{
+			\For{each mini-batch $B \subseteq D$}{
+				Compute the gradients $\nabla_\theta L(B, \theta)$\;
+				Update the model parameters $\theta \leftarrow \theta - \eta \cdot \nabla_\theta L(B, \theta)$\;
+			}
+			Evaluate the model on the validation set\;
+			\If{validation accuracy has not improved for $k$ epochs}{
+				Reduce learning rate $\eta$\;
+			}
+		}
+		Return the trained model $M$\;
+	\end{algorithm}
+	
+\end{document}
+

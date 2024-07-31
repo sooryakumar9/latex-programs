@@ -1,0 +1,41 @@
+% Simple tree diagram using the Tikz library.
+
+\documentclass{article}
+
+
+\usepackage{tikz}
+
+\usetikzlibrary{trees}
+
+\title{Tikz Library}
+\author{JSSATEB-CSE}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	
+	
+	\begin{center}
+		\begin{tikzpicture}[
+			level 1/.style={sibling distance=50mm},
+			level 2/.style={sibling distance=25mm},
+			edge from parent/.style={->,draw},
+			>=latex]
+			
+			% Root node
+			\node {Root}
+			child { node {Child 1}
+				child { node {Grandchild 1.1} }
+				child { node {Grandchild 1.2} }
+			}
+			child { node {Child 2}
+				child { node {Grandchild 2.1} }
+				child { node {Grandchild 2.2} }
+			};
+			
+			
+			
+		\end{tikzpicture}
+	\end{center}
+	
+\end{document}
