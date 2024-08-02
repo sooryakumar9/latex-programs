@@ -1,0 +1,29 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{algorithm2e}
+
+\title{Algorithm Package}
+\author{JSSATE}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\begin{algorithm}[H]
+		Algorithm to find the maximum value in a list $L[1...n]$
+		\caption{Find Maximum Value}
+		\KwIn{A list of numbers $L = [l_1, l_2, \ldots, l_n]$}
+		\KwOut{The maximum value in the list}
+		
+		$max \leftarrow L[0]$\;
+		\For{each number $x$ in $L$}{
+			\If{$x > max$}{
+				$max \leftarrow x$\;
+			}
+		}
+		\Return $max$\;
+	\end{algorithm}
+\end{document}
