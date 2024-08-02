@@ -5,68 +5,11 @@
 %\usepackage{algorithm2e}
 
 \title{Algorithm Package}
-\author{Abhilash C B}
+\author{JSSATEB}
 \date{\today}
 
 \begin{document}
 	\maketitle
-	
-	\section{Question}
-	{\Large Develop a LaTeX script to present an algorithm in the document using algorithm/algorithmic/algorithm2e library}
-	
-	\section*{Illustration}
-	\begin{itemize}
-		\item \texttt{\textbackslash documentclass\{article\}}: Defines the document type as an article
-		\item \texttt{\textbackslash usepackage[utf8]\{inputenc\}}: Ensures proper handling of UTF-8 input characters
-		\item \texttt{\textbackslash usepackage\{algorithm\}}: Imports the \texttt{algorithm} package for creating algorithms
-		\item \texttt{\textbackslash usepackage\{algorithmic\}}: Imports the \texttt{algorithmic} package for algorithmic pseudo-code
-	\end{itemize}
-	
-	
-	Additionally, the following points needs to be remembered: 
-	\begin{itemize}
-		\item \texttt{\textbackslash begin\{algorithmic\}[1]}: Begins the algorithmic environment with line numbering.
-		\item \texttt{\textbackslash begin\{algorithm\}[H]}: Begins the algorithm environment. The \texttt{[H]} option ensures the algorithm is placed exactly where it appears in the text.
-	\end{itemize}
-	
-	\footnote{JSS Academy of Technical Education Bengaluru (CSE)}
-	\footnote{JSS Academy of Technical Education Bengaluru (AIML)}
-	
-	\section*{Training a Machine Learning Model}
-	
-	\begin{algorithm}[H]
-		\caption{Training a Machine Learning Model}
-		\begin{algorithmic}[1]
-			\REQUIRE Training data $D = \{(x_i, y_i)\}_{i=1}^n$, Learning rate $\eta$, Number of epochs $E$
-			\ENSURE Trained model $M$
-			\STATE Initialize model parameters $\theta$ randomly
-			\FOR{$epoch = 1$ to $E$}
-			\FOR{each mini-batch $B \subseteq D$}
-			\STATE Compute the gradients $\nabla_\theta L(B, \theta)$
-			\STATE Update the model parameters $\theta \leftarrow \theta - \eta \cdot \nabla_\theta L(B, \theta)$
-			\ENDFOR
-			\STATE Evaluate the model on the validation set
-			\IF{validation accuracy has not improved for $k$ epochs}
-			\STATE Reduce learning rate $\eta$
-			\ENDIF
-			\ENDFOR
-			\RETURN Trained model $M$
-		\end{algorithmic}
-	\end{algorithm}
-	
-	
-	
-	
-	\section*{Find Maximum Value in a List}
-	
-	\begin{itemize}
-		\item \texttt{\textbackslash REQUIRE}: Specifies the input requirements (a list of numbers).
-		\item \texttt{\textbackslash ENSURE}: Specifies the output (the maximum value in the list).
-		\item \texttt{\textbackslash STATE}: Indicates a single statement within the algorithm.
-		\item \texttt{\textbackslash FOR} and \texttt{\textbackslash ENDFOR}: Loop structure.
-		\item \texttt{\textbackslash IF} and \texttt{\textbackslash ENDIF}: Conditional structure.
-		\item \texttt{\textbackslash RETURN}: Indicates the return value of the algorithm.
-	\end{itemize}
 	
 	\begin{algorithm}
 		\caption{Find Maximum Value}
